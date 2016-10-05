@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+	<title>CrownHILL</title>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="all">
+	<link type="text/css" rel="stylesheet" href="css/all.css" media="all">
+	<link rel="stylesheet" id="switcher-css" type="text/css" href="switcher/css/switcher.css" media="all">
+	<link rel="alternate stylesheet" type="text/css" href="colors/belize.css" title="belize" media="all">
+	<link rel="alternate stylesheet" type="text/css" href="colors/nephritis.css" title="nephritis" media="all">
+	<link rel="alternate stylesheet" type="text/css" href="colors/greensea.css" title="greensea" media="all">
+	<link rel="alternate stylesheet" type="text/css" href="colors/wisteria.css" title="wisteria" media="all">
+	<link rel="alternate stylesheet" type="text/css" href="colors/midnightblue.css" title="midnightblue" media="all">
+	<link rel="alternate stylesheet" type="text/css" href="colors/orange.css" title="orange" media="all">
+	<link rel="alternate stylesheet" type="text/css" href="colors/carrot.css" title="carrot" media="all">
+	<link rel="alternate stylesheet" type="text/css" href="colors/pomegranate.css" title="pomegranate" media="all">
+	<link rel="alternate stylesheet" type="text/css" href="colors/concrete.css" title="concrete" media="all">
+	<link rel="alternate stylesheet" type="text/css" href="colors/purple.css" title="purple" media="all">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<link media="all" rel="stylesheet" href="css/ie.css" />
+	<![endif]-->
+</head>
+<body>
+	<div class="demo_changer">
+		<div class="demo-icon"> <i class="fa fa-wrench"></i> </div>
+		<!-- end opener icon -->
+		<div class="form_holder">
+			<div class="row1">
+				<h4 class="text-center"> Settings </h4>
+				<div class="col-lg-121">
+					<form>
+						<select id="headers" class="show-menu-arrow selectpicker">
+							<option value="">Change Header</option>
+							<option value="header1">Style 1</option>
+							<option value="header2">Style 2</option>
+						</select>
+						<select id="layout" class="show-menu-arrow selectpicker">
+							<option value="">Select Layout</option>
+							<option value="full">Full</option>
+							<option value="boxed">Boxed</option>
+						</select>
+					</form>
+					<div class="predefined_styles">
+						<h4>Skins</h4>
+						<a href="#" rel="greensea" class="styleswitch"><img class="img-thumbnail" src="switcher/images/icons/greensea.jpg" alt=""></a>
+						<a href="#" rel="nephritis" class="styleswitch"><img class="img-thumbnail" src="switcher/images/icons/nephritis.jpg" alt=""></a> 
+						<a href="#" rel="belize" class="styleswitch"><img class="img-thumbnail" src="switcher/images/icons/belize.jpg" alt=""></a> 
+						<a href="#" rel="wisteria" class="styleswitch"><img class="img-thumbnail" src="switcher/images/icons/wisteria.jpg" alt=""></a> 
+						<a href="#" rel="midnightblue" class="styleswitch"><img class="img-thumbnail" src="switcher/images/icons/midnightblue.jpg" alt=""></a> 
+						<a href="#" rel="orange" class="styleswitch"><img class="img-thumbnail" src="switcher/images/icons/orange.jpg" alt=""></a> 
+						<a href="#" rel="carrot" class="styleswitch"><img class="img-thumbnail" src="switcher/images/icons/carrot.jpg" alt=""></a>
+						<a href="#" rel="pomegranate" class="styleswitch"><img class="img-thumbnail" src="switcher/images/icons/pomegranate.jpg" alt=""></a>
+						<a href="#" rel="concrete" class="styleswitch"><img class="img-thumbnail" src="switcher/images/icons/concrete.jpg" alt=""></a> 
+						<a href="#" rel="purple" class="styleswitch"><img class="img-thumbnail" src="switcher/images/icons/purple.jpg" alt=""></a> 
+					</div>
+					<div class="predefined_styles">
+						<h4>Patterns(Boxed Version)</h4>
+						<div class="PatternChanger">
+							<a href="switcher/images/patterns/bg_01.jpg" class="bg_t"><img src="switcher/images/patterns/bg_01.jpg" alt=""></a>
+							<a href="switcher/images/patterns/bg_02.jpg" class="bg_t"><img src="switcher/images/patterns/bg_02.jpg" alt=""></a>
+							<a href="switcher/images/patterns/bg_03.jpg" class="bg_t"><img src="switcher/images/patterns/bg_03.jpg" alt=""></a>
+							<a href="switcher/images/patterns/bg_04.jpg" class="bg_t"><img src="switcher/images/patterns/bg_04.jpg" alt=""></a>
+							<a href="switcher/images/patterns/bg_05.jpg" class="bg_t"><img src="switcher/images/patterns/bg_05.jpg" alt=""></a>
+							<a href="switcher/images/patterns/bg_06.jpg" class="bg_t"><img src="switcher/images/patterns/bg_06.jpg" alt=""></a>
+							<a href="switcher/images/patterns/bg_07.jpg" class="bg_t"><img src="switcher/images/patterns/bg_07.jpg" alt=""></a>
+							<a href="switcher/images/patterns/bg_08.jpg" class="bg_t"><img src="switcher/images/patterns/bg_08.jpg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- wrapper -->
+	<div id="wrapper">
+		<!-- header -->
+		<header id="header">
+			<!-- topbar -->
+			<div class="topbar">
+				<!-- Donations -->
+				<div class="donation">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+								<h2>Give Donation for a cuase</h2>
+								<div class="col-sm-12 amount-box">
+									<ul>
+										<li><a href="#"><sup>$</sup>10</a></li>
+										<li><a href="#"><sup>$</sup>20</a></li>
+										<li class="active"><a href="#"><sup>$</sup>50</a></li>
+										<li><a href="#"><sup>$</sup>100</a></li>
+									</ul>
+									<form>
+										<fieldset>
+											<input type="text" placeholder="Other Amount">
+											<input type="submit" value="Submit">
+										</fieldset>
+									</form>
+								</div>
+								<div class="col-md-8 col-md-offset-2 ">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sapien neque, bibendum in sagittis eu, fermentum vel risus. Sed sed erat velit. Aliquam a mollis enim. In consectetur.</p>
+								</div>
+							</div>
+							<span class="shadow"></span>
+							<!--<a href="javascript:;" class="map-close">close</a>-->
+						</div>
+					</div>
+				</div>
+				<!-- map -->
+				<div class="map">
+					<div id="header-gmap" class="gmap3"></div>
+					<span class="shadow"></span>
+					<a href="javascript:;" class="map-close">close</a>
+				</div>
+				<!-- Search form -->
+				<div id="search-form">
+					<form action="#" class="container">
+						<label for="search"><span class="fa fa-search"></span>
+						</label>
+						<div class="text">
+							<input type="search" id="search" placeholder="Enter any keyword and Press Enter" class="form-control">
+						</div>
+					</form>
+				</div>
+				<div class="container has-feedback">
+					<div class="row">
+						<div class="col-lg-4 col-md-4">
+							<!-- timing -->
+							<div class="timing">
+								<strong class="h3">Sunday Service</strong>
+								<time datetime="2014-08-16">Sunday 09:45 am to 01:30pm</time>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 text-center">
+							<!-- top navigation -->
+							<nav class="topnav">
+								<ul>
+									<li><a href="#" class="donation-opener">Give Online</a></li>
+									<li><a href="store.html">Church Shop</a></li>
+									<li><a href="#" class="map-opener">Map Directions</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-lg-4 col-md-4 text-right">
+							<!-- shoping cart -->
+							<div class="shoping-cart">
+								<a href="#">Shopping Cart</a>
+								<span class="amount">1 0.00</span>
+							</div>
+							<!-- language -->
+							<div class="language">
+								<a href="#" role="button" data-toggle="dropdown"><img src="images/flag.png" width="24" height="16" alt="image description" class="alignleft">English</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="#"><img src="images/flag.png" width="24" height="16" alt="image description" class="alignleft">English</a>
+									</li>
+									<li>
+										<a href="#"><img src="images/flag.png" width="24" height="16" alt="image description" class="alignleft">English</a>
+									</li>
+									<li>
+										<a href="#"><img src="images/flag.png" width="24" height="16" alt="image description" class="alignleft">English</a>
+									</li>
+								</ul>
+							</div>
+							<!-- search form -->
+							<div class="search">
+								<a href="#" class="search-opener"><span class="fa fa-search"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container has-feedback">
+				<!-- logo -->
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" alt="Crown HILL Church">
+					</a>
+				</div>
+				<div class="header-holder">
+					<!-- top social networks -->
+					<ul class="social-networks">
+						<li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+						<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+						<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+						<li><a href="#"><span class="fa fa-behance"></span></a></li>
+						<li><a href="#"><span class="fa fa-vimeo-square"></span></a></li>
+						<li><a href="#"><span class="fa fa-youtube"></span></a></li>
+					</ul>
+					<!-- events -->
+					<div class="events hidden-xs">
+						<strong class="h3">Next Event</strong>
+						<div class="timer">
+							<div class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s" id="getting-started"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<!-- main navigation -->
+				<nav id="nav" class="navbar navbar-default" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<span class="title visible-xs">Menu</span>
+						</div>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#" data-toggle="dropdown">Blog</a>
+									<!-- dropdown -->
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="blog.html">Blog</a></li>
+										<li><a href="blog2.html">Grid View</a></li>
+										<li><a href="two-column.html">Two Columns</a></li>
+										<li><a href="blog-details.html">blog details</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" data-toggle="dropdown">Events</a>
+									<!-- dropdown -->
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="events.html">Events</a></li>
+										<li><a href="events-calendar.html">Events Calendar</a></li>
+										<li><a href="event-details.html">Event Details</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" data-toggle="dropdown">Sermons</a>
+									<!-- dropdown -->
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="sermon.html">Sermon</a></li>
+										<li><a href="sermon-details.html">Sermon Details</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" data-toggle="dropdown">Store</a>
+									<!-- dropdown -->
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="store.html">Store</a></li>
+										<li><a href="store-details.html">Store Details</a></li>
+									</ul>
+								</li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="shortcodes.html">Shortcodes</a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="error-msg.html">404 Error</a></li>
+										<li><a href="icons.html">Icons</a></li>
+										<li><a href="shortcodes.html#Typo">Typography</a></li>
+										<li><a href="shortcodes.html#Tabs">Tab Set</a></li>
+										<li><a href="shortcodes.html#Accordians">Accordians</a></li>
+										<li><a href="shortcodes.html#alerts">Alert Messages</a></li>
+										<li><a href="shortcodes.html#Lists">List Styles</a></li>
+										<li><a href="shortcodes.html#Buttons">Button Styles</a></li>
+										<li><a href="shortcodes.html#price-tables">Price Table</a></li>
+										<li><a href="shortcodes.html#Contact-form">Contact Form</a></li>
+										<li><a href="shortcodes.html#video">Video</a></li>
+									</ul>
+								</li>
+								<li><a href="prayer-wall.html">Prayer Wall</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a data-target="#inquary-form" data-toggle="modal" href="#">Quick Enquiry</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- page info -->
+		<section id="page-info" class="container-fluid">
+			<div class="row">
+				<div class="img-area">
+					<div class="holder"><img data-velocity="-.5" class="parallax-main" src="images/img43.jpg" width="1600" height="196" alt="Latest Blogs" />
+					</div>
+				</div>
+				<div class="textholder">
+					<div class="container textblock">
+						<div class="block">
+							<!-- breadcrumb -->
+							<ol class="breadcrumb text-capitalize">
+								<li><a href="#"><span class="fa fa-home"></span>Home</a></li>
+								<li><a href="#">Blog Style 2</a></li>
+							</ol>
+							<!-- page title -->
+							<div class="page-title">
+								<div class="holder">
+									<h1>Latest Blogs</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- main -->
+		<main id="main" role="main" class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-8 col-md-9 col-md-push-3 col-sm-push-4">
+						<div id="content">
+							<div class="post-related row">
+								<article class="col-xs-12 col-md-6 blog-post">
+									<div class="img-area">
+										<a href="#">
+											<div class="img-holder">
+												<span class="arrow"></span><img src="images/img39.jpg" width="257" height="185" class="img-responsive" alt="image description" />
+											</div>
+										</a>
+										<a href="#"><img src="images/img2.jpg" width="41" height="41" class="thumbnail" alt="img description" />
+										</a>
+									</div>
+									<header class="head">
+										<time class="date" datetime="2014-02-12"><span class="fa fa-calendar-o"></span>February 12, 2014</time>
+										<h3><a href="#">Why Part of Small Group is Good.</a></h3>
+										<ul class="meta">
+											<li><a href="#"><span class="fa fa-folder-open-o"></span>Pastor-County-Religoun</a>
+											</li>
+										</ul>
+									</header>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sapien neque, bibendum in sagittis eu, fermentum vel risus. Sed sed erat velit. </p>
+									<a href="#" class="btn-more">Read more</a>
+								</article>
+								<article class="col-xs-12 col-md-6 blog-post">
+	
+									<div class="img-area">
+										<a href="#">
+											<div class="img-holder">
+												<span class="arrow"></span><img src="images/img40.jpg" width="257" height="185" class="img-responsive" alt="image description" />
+											</div>
+										</a>
+										<a href="#"><img src="images/img16.jpg" width="41" height="41" class="thumbnail" alt="img description" />
+										</a>
+									</div>
+									<header class="head">
+										<time class="date" datetime="2014-02-12"><span class="fa fa-calendar-o"></span>February 12, 2014</time>
+										<h3><a href="#">During your career.</a></h3>
+										<ul class="meta">
+											<li><a href="#"><span class="fa fa-folder-open-o"></span>Pastor-County-Religoun</a>
+											</li>
+										</ul>
+									</header>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sapien neque, bibendum in sagittis eu, fermentum vel risus. Sed sed erat velit. </p>
+									<a href="#" class="btn-more">Read more</a>
+								</article>
+								<article class="col-xs-12 col-md-6 blog-post">
+									<div class="img-area">
+										<a href="#">
+											<div class="img-holder">
+												<span class="arrow"></span><img src="images/img41.jpg" width="257" height="185" class="img-responsive" alt="image description" />
+											</div>
+										</a>
+										<a href="#"><img src="images/img17.jpg" width="41" height="41" class="thumbnail" alt="img description" />
+										</a>
+									</div>
+									<header class="head">
+										<time class="date" datetime="2014-02-12"><span class="fa fa-calendar-o"></span>February 12, 2014</time>
+										<h3><a href="#">During your design career.</a></h3>
+										<ul class="meta">
+											<li><a href="#"><span class="fa fa-folder-open-o"></span>Pastor-County-Religoun</a>
+											</li>
+										</ul>
+									</header>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sapien neque, bibendum in sagittis eu, fermentum vel risus. Sed sed erat velit. </p>
+									<a href="#" class="btn-more">Read more</a>
+								</article>
+								<article class="col-xs-12 col-md-6 blog-post">
+									<div class="img-area">
+										<a href="#">
+											<div class="img-holder">
+												<span class="arrow"></span><img src="images/img63.jpg" width="257" height="185" class="img-responsive" alt="image description" />
+											</div>
+										</a>
+										<a href="#"><img src="images/img18.jpg" width="41" height="41" class="thumbnail" alt="img description" />
+										</a>
+									</div>
+									<header class="head">
+										<time class="date" datetime="2014-02-12"><span class="fa fa-calendar-o"></span>February 12, 2014</time>
+										<h3><a href="#">During your design career.</a></h3>
+										<ul class="meta">
+											<li><a href="#"><span class="fa fa-folder-open-o"></span>Pastor-County-Religoun</a>
+											</li>
+										</ul>
+									</header>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sapien neque, bibendum in sagittis eu, fermentum vel risus. Sed sed erat velit. </p>
+									<a href="#" class="btn-more">Read more</a>
+								</article>
+								<article class="col-xs-12 col-md-6 blog-post">
+									<div class="img-area">
+										<a href="#">
+											<div class="img-holder">
+												<span class="arrow"></span><img src="images/img64.jpg" width="257" height="185" class="img-responsive" alt="image description" />
+											</div>
+										</a>
+										<a href="#"><img src="images/img15.jpg" width="41" height="41" class="thumbnail" alt="img description" />
+										</a>
+									</div>
+									<header class="head">
+										<time class="date" datetime="2014-02-12"><span class="fa fa-calendar-o"></span>February 12, 2014</time>
+										<h3><a href="#">The Hope of the Church.</a></h3>
+										<ul class="meta">
+											<li><a href="#"><span class="fa fa-folder-open-o"></span>Pastor-County-Religoun</a>
+											</li>
+										</ul>
+									</header>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sapien neque, bibendum in sagittis eu, fermentum vel risus. Sed sed erat velit. </p>
+									<a href="#" class="btn-more">Read more</a>
+								</article>
+								<article class="col-xs-12 col-md-6 blog-post">
+									<div class="img-area">
+										<a href="#">
+											<div class="img-holder">
+												<span class="arrow"></span><img src="images/img65.jpg" width="257" height="185" class="img-responsive" alt="image description" />
+											</div>
+										</a>
+										<a href="#"><img src="images/img16.jpg" width="41" height="41" class="thumbnail" alt="img description" />
+										</a>
+									</div>
+									<header class="head">
+										<time class="date" datetime="2014-02-12"><span class="fa fa-calendar-o"></span>February 12, 2014</time>
+										<h3><a href="#">Why You Need a Small Group.</a></h3>
+										<ul class="meta">
+											<li><a href="#"><span class="fa fa-folder-open-o"></span>Pastor-County-Religoun</a>
+											</li>
+										</ul>
+									</header>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sapien neque, bibendum in sagittis eu, fermentum vel risus. Sed sed erat velit. </p>
+									<a href="#" class="btn-more">Read more</a>
+								</article>
+							</div>
+							<ul class="pagination">
+								<li><a href="#">« First</a>
+								</li>
+								<li><a href="#">«</a>
+								</li>
+								<li><a href="#">1</a>
+								</li>
+								<li><a href="#">2</a>
+								</li>
+								<li class="active">3</li>
+								<li><a href="#">...</a>
+								</li>
+								<li><a href="#">8</a>
+								</li>
+								<li><a href="#">9</a>
+								</li>
+								<li><a href="#">»</a>
+								</li>
+								<li><a href="#">Last »</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3 col-md-pull-9 col-sm-pull-8">
+						<aside id="aside">
+							<section class="widget" id="accordion1">
+								<h3><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Blog Categories</a></h3>
+								<div id="collapseOne" class="panel-collapse collapse in">
+									<ul>
+										<li><a href="#">Facility Rental</a>
+										</li>
+										<li><a href="#">Sign up for our Newsletter</a>
+										</li>
+										<li><a href="#">Donate Online</a>
+										</li>
+										<li><a href="#">Worship Arts</a>
+										</li>
+										<li><a href="#">First Faith Kids</a>
+										</li>
+										<li><a href="#">Arts Institute of Mansfield</a>
+										</li>
+										<li><a href="#">Donate Online</a>
+										</li>
+										<li><a href="#">Worship Arts</a>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<section class="widget widget-posts" id="accordion2">
+								<h3><a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">Recent Blog</a></h3>
+								<div id="collapse2" class="panel-collapse collapse">
+									<ul>
+										<li>
+											<time class="date" datetime="2014-12-02"><span class="fa fa-calendar-o"></span>February 12, 2014</time>
+											<strong class="title"><a href="#">Some point during your love Design career.</a></strong>
+											<div class="meta">
+												<a href="#"><span class="fa fa-comment"></span>34 Comments</a>
+												<a href="#"><span class="fa fa-heart"></span>567 Likes</a>
+											</div>
+										</li>
+										<li>
+											<time class="date" datetime="2014-12-02"><span class="fa fa-calendar-o"></span>February 12, 2014</time>
+											<strong class="title"><a href="#">Some point during your love Design career.</a></strong>
+											<div class="meta">
+												<a href="#"><span class="fa fa-comment"></span>34 Comments</a>
+												<a href="#"><span class="fa fa-heart"></span>567 Likes</a>
+											</div>
+										</li>
+										<li>
+											<time class="date" datetime="2014-12-02"><span class="fa fa-calendar-o"></span>February 12, 2014</time>
+											<strong class="title"><a href="#">Some point during your love Design career.</a></strong>
+											<div class="meta">
+												<a href="#"><span class="fa fa-comment"></span>34 Comments</a>
+												<a href="#"><span class="fa fa-heart"></span>567 Likes</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<section class="widget widget-comments" id="accordion3">
+								<h3><a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">Recent Comments</a></h3>
+								<div id="collapse3" class="panel-collapse collapse">
+									<ul>
+										<li>
+											<header class="head">
+												<div class="img-area">
+													<a href="#"><img src="images/thumbnail-4.png" width="41" height="41" alt="-James Rolson" />
+													</a>
+												</div>
+												<strong class="author">
+												<a href="#">-James Rolson</a>
+												<span>Commented</span>
+											</strong>
+											</header>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sapien neque, bibendum.</p>
+										</li>
+										<li>
+											<header class="head">
+												<div class="img-area">
+													<a href="#"><img src="images/thumbnail-4.png" width="41" height="41" alt="-James Rolson" />
+													</a>
+												</div>
+												<strong class="author">
+												<a href="#">-James Rolson</a>
+												<span>Commented</span>
+											</strong>
+											</header>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sapien neque, bibendum.</p>
+										</li>
+										<li>
+											<header class="head">
+												<div class="img-area">
+													<a href="#"><img src="images/thumbnail-4.png" width="41" height="41" alt="-James Rolson" />
+													</a>
+												</div>
+												<strong class="author">
+												<a href="#">-James Rolson</a>
+												<span>Commented</span>
+											</strong>
+											</header>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sapien neque, bibendum.</p>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<section class="widget widget-calendar" id="accordion4">
+								<h3><a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed">Event Calender</a></h3>
+								<div id="collapse4" class="panel-collapse collapse">
+									<div id="datepicker"></div>
+								</div>
+							</section>
+						</aside>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- footer -->
+		<footer id="footer">
+			<div class="container">
+				<!-- footer info -->
+				<div class="info">
+					<div class="row">
+						<div class="col-lg-3 col-md-3">
+							<div class="logo">
+								<a href="#"><img src="images/logo2.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4">
+							<div class="box">
+								<div class="icon">
+									<span class="fa fa-map-marker"></span>
+								</div>
+								<div class="text">
+									<address>54 North Service Rd. Grimsby, ON L3M 1Y8 Canada</address>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4">
+							<div class="box">
+								<div class="icon">
+									<span class="fa fa-envelope-o"></span>
+								</div>
+								<div class="text">
+									<ul class="contact-list">
+										<li class="tel">P: <a href="tel:9059458888">(905) 945-8888</a>
+										</li>
+										<li class="tel">F: <a href="tel:9059458888">(905) 945-8888</a>
+										</li>
+										<li>E: <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#099;&#104;&#117;&#114;&#099;&#104;&#110;&#097;&#109;&#101;&#046;&#099;&#111;&#109;">&#105;&#110;&#102;&#111;&#064;&#099;&#104;&#117;&#114;&#099;&#104;&#110;&#097;&#109;&#101;&#046;&#099;&#111;&#109;</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4">
+							<ul class="buttons">
+								<li><a href="#" class="btn btn-primary">Find LOCATION</a>
+								</li>
+								<li class="inquary-form">
+									<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#inquary-form">Quick Enquiry</a>
+									<div class="modal fade" id="inquary-form" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-body">
+													<div class="modal-header">
+														<h4>Quick Enquiry</h4>
+														<button data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+														</button>
+													</div>
+													<form action="#">
+														<label for="name">Name</label>
+														<input type="text" id="name" class="form-control">
+														<label for="email">Email Address</label>
+														<input type="email" id="email" class="form-control">
+														<label for="tel">pHONE nuMBER</label>
+														<input type="tel" id="tel" class="form-control">
+														<label for="message">Enter Your Message</label>
+														<textarea id="message" cols="30" rows="10" class="form-control"></textarea>
+														<input type="submit" value="Submit" class="btn btn-primary">
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- gallery -->
+				<div class="row holder">
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<h4>Image Gallry</h4>
+						<ul class="img-gallery">
+							<li>
+								<a href="#"><img src="images/img25.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/img26.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/img27.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/img28.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/img29.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/img30.jpg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- footer navigation -->
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<h4>Quick Links</h4>
+						<nav class="footer-nav">
+							<ul>
+								<li><a href="#">Facility Rental</a>
+								</li>
+								<li><a href="#">Sign up for our Newsletter</a>
+								</li>
+								<li><a href="#">Donate Online</a>
+								</li>
+								<li><a href="#">Worship Arts</a>
+								</li>
+								<li><a href="#">First Faith Kids</a>
+								</li>
+								<li><a href="#">The Arts Institute of Mansfield</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="clearfix hidden-lg"></div>
+					<!-- social networks -->
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<h4>Follow us</h4>
+						<ul class="social-networks">
+							<li><a href="#"><span class="fa fa-facebook"></span>Facebook</a>
+							</li>
+							<li><a href="#"><span class="fa fa-twitter"></span>Twitter</a>
+							</li>
+							<li><a href="#"><span class="fa fa-linkedin"></span>Linkedin</a>
+							</li>
+							<li><a href="#"><span class="fa fa-google-plus"></span>Google Plus</a>
+							</li>
+						</ul>
+					</div>
+					<!-- newsletter -->
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<h4>Weekly Newsletter</h4>
+						<form action="#" class="newslatter">
+							<p>ICLV is a multicultural, healing, prophetic church all about giving the grace of Jesus to Las Vegas. Where sin abounds.</p>
+							<div class="form-holder">
+								<span><input type="submit"></span>
+								<div class="text">
+									<input type="email" placeholder="Enter Email Address" class="form-control">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="infobar">
+				<div class="container text-center has-feedback">
+					<a href="#header" class="btn-top">btn-top</a>
+					<p>&copy; CopyRights 2014 CrownHill Church Worship Centre</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src='js/moment.min.js'></script>
+	<script src="js/jquery.min.1.10.1.js"></script>
+	<script src="js/jquery.calendar.js"></script>
+	<script src="js/jquery.calendarsettings.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.essentials.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/jquery.owlcarousel.js"></script>
+	<script src="js/jquery.salvottore.js"></script>
+	<script src="js/jquery.scrolly.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/jquery.fancybox-media.js"></script>
+	<script src="js/jquery.jplayer.js"></script>
+	<script src="js/jquery.ui.js"></script>
+	<script src="js/jquery.main.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+	<script type="text/javascript" src="js/gmap3.min.js"></script>
+	<script src="switcher/js/bootstrap-select.js"></script> 
+	<script src="switcher/js/evol.colorpicker.min.js" type="text/javascript"></script>
+	<script src="switcher/js/dmss.js"></script> 
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#layout").change(function () {
+				$("#layout option:selected").each(function () {
+					if ($(this).attr("value") == "boxed" ) {
+						$("#wrapper").addClass("box-view");
+					}
+					if ($(this).attr("value") == "full") {
+						$("#wrapper").removeClass("box-view");
+					}
+				});
+			}).change();
+			
+			$("#headers").change(function () {
+				$("#headers option:selected").each(function () {
+					if ($(this).attr("value") == "header1" ) {
+						$("#wrapper").addClass("header2");
+					}
+					if ($(this).attr("value") == "header2") {
+						$("#wrapper").removeClass("header2");
+					}
+				});
+			}).change();
+		});
+	</script>
+</body>
+</html>
